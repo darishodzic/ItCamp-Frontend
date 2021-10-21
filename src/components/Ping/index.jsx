@@ -1,8 +1,6 @@
-
+import classes from "./style.module.scss";
 function Ping() {
-    return <div>
-        It works
-    </div>
+  return <div className={classes.container}>It works</div>;
 }
 
-export default Ping
+export default Ping;
