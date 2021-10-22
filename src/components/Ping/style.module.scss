@@ -1,6 +1,6 @@
-@import "./stylee";
+@import "../mainStyle/style";
 .container {
   font-size: 30px;
   text-decoration: underline;
-  color: $theme-color;
+  color: $text-color;
 }
