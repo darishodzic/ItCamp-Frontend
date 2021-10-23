@@ -1,0 +1,30 @@
+@import "../mainStyle/style";
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 15%;
+  height: 100%;
+  background-color: red;
+}
+
+.searchBar {
+  width: 60%;
+  height: 100%;
+  background-color: rebeccapurple;
+}
+
+.icon {
+  width: 15%;
+  height: 100%;
+  background-color: royalblue;
+}
