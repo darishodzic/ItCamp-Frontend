@@ -1,5 +1,11 @@
 @import "../mainStyle/style";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
   width: 100vw;
   height: 10vh;
@@ -12,25 +18,110 @@ nav {
 }
 
 .logo {
-  width: 15%;
+  width: 20%;
   height: 100%;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 
 .searchBar {
-  width: 60%;
+  width: 50%;
   height: 100%;
-  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form {
+    width: 80%;
+    border: 1px solid $theme-color;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    width: 80%;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 18px;
+    &:focus {
+      border: none;
+      outline: none;
+      background-color: $background-color;
+    }
+  }
+  button {
+    padding: 0.5rem 0.5rem;
+    background-color: $background-color;
+    color: $theme-color;
+    height: 100%;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    border-left: 1px solid $theme-color;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background-color: $dark-grey;
+    }
+  }
 }
 
 .icon {
-  width: 15%;
+  padding: 0 2rem;
+  width: 20%;
   height: 100%;
-  background-color: red;
   color: $theme-color;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
+  i:hover {
+    color: $theme-color-dark;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .icon {
+    grid-area: "icon";
+    font-size: 25px;
+    padding: 0;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+  }
+  .searchBar {
+    grid-area: "searchBar";
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    button,
+    input {
+      font-size: 15px;
+    }
+  }
+  .logo {
+    justify-content: flex-start;
+    margin-left: 3rem;
+    grid-area: "logo";
+    width: 100%;
+    grid-column-start: 1;
+
+    grid-column-end: 3;
+  }
+  nav {
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
