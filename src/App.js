@@ -1,11 +1,8 @@
-import Ping from "./components/Ping";
+import CreateAccount from "./components/createAccount/CreateAccount";
+import LogIn from "./components/logIN/index";
 
 function App() {
-  return (
-    <div>
-      <Ping />
-    </div>
-  );
+  return <div>{/* <CreateAccount /> */ <LogIn />}</div>;
 }
 
 export default App;

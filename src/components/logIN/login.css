@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #01718f;
+}
+
+.logIn {
+  background-color: #e5e5e5;
+  border-radius: 50px;
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  left: 25%;
+  top: 10%;
+  border-radius: 50px;
+}
+
+.naslov {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.logInWith {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+
+.logwith {
+  width: 279px;
+  height: 62px;
+}
+
+.or {
+  text-align: center;
+  padding-top: 2%;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+}
+
+input[type="text"],
+input[type="password"] {
+  /* width: 50%; */
+}
+
+.button {
+}
