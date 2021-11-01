@@ -1,4 +1,4 @@
-import Category from "./components/CategoryFold.jsx/Category";
+import Category from "./components/CategoryFold.jsx/Index";
 import Ping from "./components/Ping";
 
 import {
@@ -24,6 +24,7 @@ function App() {
       </Route>
       <Route path="/category" exact>
         <h1>category</h1>
+        <Category/>
       </Route>
       <Route path="/category/:categoryId" exact> 
         <h1>Nesto</h1>
