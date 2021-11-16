@@ -1,0 +1,41 @@
+@import "../mainStyle/style";
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 38vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 7rem;
+}
+
+.iconsFill {
+  fill: $theme-color;
+}
+
+h3 {
+  color: $theme-color;
+  font-size: 1.6rem;
+}
+
+.socialIconsContainer {
+  margin-bottom: 3rem;
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 0;
+    align-items: center;
+    height: 30vh;
+  }
+  .socialIconsContainer {
+    width: 80%;
+    margin-top: 1rem;
+  }
+}
